@@ -1,17 +1,16 @@
-x1 =0
-v1 =3
+x1 = 42
+v1 = 3
 
-x2 =4
-v2 =2 
+x2 = 94
+v2 = 2
 
-for i in range(13):
+key = False
+for i in range(10000):
+    print('position ---> ',x1,x2)
+    if(x1 == x2):
+        
+        key = True
+    x1 += v1
+    x2 += v2
 
-    print('position  ----> ',x1,x2)
-    if(x1==x2):
-        print('Yes')
-    x1 +=v1
-    x2 +=v2
-    
-    
-    
-
+print(key)
