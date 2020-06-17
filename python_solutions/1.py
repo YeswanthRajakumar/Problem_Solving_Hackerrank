@@ -10,4 +10,4 @@ def cap(name):
 s = input('Enter the name : ')
 
 cap_list = cap(s)
-print(cap_list)
+print(cap_list+" ")
