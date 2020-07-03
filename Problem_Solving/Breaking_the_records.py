@@ -1,20 +1,14 @@
-scores = [10, 5 ,20 ,20 ,4 ,5 ,2 ,25 ,1]
-h_score = [scores[0]]
-l_score = [scores[0]]
-print('scores  : ',scores)
-for i in range(len(scores)):
-    max_s = scores[i]
-    min_s = scores[i]
-    if scores[i] > max(h_score):
-        h_score.append(max_s)
-    elif scores[i] == max(h_score):
-         h_score.append(scores[i])
+arr = [10, 5 ,20 ,20 ,4 ,5 ,2 ,25 ,1]
+h_score = arr[0]
+max_count =0
+l_score = arr[0]
+min_count =0
+for i in range(len(arr)):
+    if arr[i]> h_score:
+        h_score = arr[i]
+        max_count+=1
+    elif arr[i]< l_score:
+        l_score = arr[i]
+        min_count+=1
 
-    if scores[i] < min(l_score):
-        l_score.append(min_s)
-
-    elif scores[i] < min(l_score):
-        l_score.append(scores[i])
-
-print('highest : ',h_score)
-print('lowest  : ',l_score)
+print(max_count,min_count)
